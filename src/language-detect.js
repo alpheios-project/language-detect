@@ -1,4 +1,4 @@
-export default class DetectLanguage {
+export default class LanguageDetect {
   static get langs () {
     return {
       grc: { regex: /^[\u0374-\u03FB ]|[\u1F00-\u1FFE]+$/u, langCode: 'grc' },
@@ -25,6 +25,6 @@ export default class DetectLanguage {
         break
       }
     }
-    return langRes || this.defaultLangCode
+    return langRes
   }
 }

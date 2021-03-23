@@ -2,17 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./detect-language.js":
+/***/ "./language-detect.js":
 /*!****************************!*\
-  !*** ./detect-language.js ***!
+  !*** ./language-detect.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ DetectLanguage)
+/* harmony export */   "default": () => (/* binding */ LanguageDetect)
 /* harmony export */ });
-class DetectLanguage {
+class LanguageDetect {
   static get langs () {
     return {
       grc: { regex: /^[\u0374-\u03FB ]|[\u1F00-\u1FFE]+$/u, langCode: 'grc' },
@@ -39,7 +39,7 @@ class DetectLanguage {
         break
       }
     }
-    return langRes || this.defaultLangCode
+    return langRes
   }
 }
 
@@ -110,9 +110,9 @@ var __webpack_exports__ = {};
   \******************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DetectLanguage": () => (/* reexport safe */ _detect_language_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */   "LanguageDetect": () => (/* reexport safe */ _language_detect_js__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
-/* harmony import */ var _detect_language_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/detect-language.js */ "./detect-language.js");
+/* harmony import */ var _language_detect_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/language-detect.js */ "./language-detect.js");
 
 
 
