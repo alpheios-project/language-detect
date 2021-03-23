@@ -2,21 +2,11 @@
 /* eslint-disable no-unused-vars */
 
 import DetectLanguage from '@/detect-language.js'
-import GreekCharacters from '@/langs/greek-characters.json'
 
 describe('detect-language.test.js', () => {
   console.error = function () {}
   console.log = function () {}
   console.warn = function () {}
-
-  const regexGreek = /^[\u0374-\u03FB ]|[\u1F00-\u1FFE]+$/u
-  const regexPersian = /^[\u0621-\u06CC ]+$/u
-  const regexArabic = /^[\u0600-\u06FF ]|[\u0750-\u077F]|[\u08A0-\u08FF]|[\uFB50-\uFDFF]+$/u
-
-  const regexLatin = /^[A-Za-z ]+$/
-  const regexGeez = /^[\u1200-\u137C ]+$/u
-  const regexChinese = /^[\u4E00-\u4EFF ]|[\u5000-\u5FFF]|[\u6000-\u6FFF]|[\u7000-\u7FFF]|[\u8000-\u8FFF]|[\u9000-\u9FFF]+$/u
-  const regexpSyriac = /^[\u0700-\u074F ]|[\u0860-\u086A]+$/u
 
   beforeEach(() => {
     jest.spyOn(console, 'error')
