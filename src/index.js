@@ -1,3 +1,3 @@
-import LanguageDetect from '@/language-detect.js'
+import LanguageDetect from './language-detect.js'
 
 export { LanguageDetect }
