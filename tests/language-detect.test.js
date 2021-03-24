@@ -1,6 +1,5 @@
 /* eslint-env jest */
 /* eslint-disable no-unused-vars */
-
 import LanguageDetect from '@/language-detect.js'
 
 describe('language-detect.test.js', () => {
@@ -19,6 +18,7 @@ describe('language-detect.test.js', () => {
   afterAll(() => {
     jest.clearAllMocks()
   })
+
 
   it('1 LanguageDetect - check greek', () => {
     const testStr = 'τά ταῖν ταῖν τοῦ εγώ εμένα ἐμαυτοῦ ταύταις ένα δύο τρία όμορφος νέος γλυκός συνεχής πλατύς οξύς ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον πρόσφυμα ξηρή σκληρή ζώνη ινώδους συνδετικού ιστού που συνδέει συνήθως μύες με οστά ἥρωϊ Δαναὸς ἀφίκτωρ λεπτοψαμάθων'
@@ -59,4 +59,5 @@ describe('language-detect.test.js', () => {
     const testStr ='Тестовый текст'
     expect(LanguageDetect.detect(testStr)).not.toBeDefined()
   })
+
 })

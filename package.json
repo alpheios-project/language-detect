@@ -5,7 +5,7 @@
   "description": "The Alpheios Language Detect Library allows to detect language of the word/text by unicode codes.",
   "main": "dist/alpheios-language-detect.js",
   "scripts": {
-    "build": "npm run lint && node --experimental-modules ./node_modules/alpheios-node-build/dist/build.mjs -m webpack -M all -p lib -c config.mjs",
+    "build": "npm run lint && node --experimental-modules ./node_modules/alpheios-node-build/dist/build.mjs  -m all -M all -p lib -c config.mjs",
     "lint": "eslint --no-eslintrc -c eslint-standard-conf.json --fix src/**/*.js",
     "test": "jest tests --coverage",
     "github-build": "node --experimental-modules --experimental-json-modules ./github-build.mjs",
