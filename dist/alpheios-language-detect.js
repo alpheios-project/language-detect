@@ -75,7 +75,6 @@ class LanguageDetect {
       const langData = this.langs[i]
       const checkText = text.replace(langData.punctuation, '')
 
-      // console.info('checkText', checkText)
       if (langData.regex.test(checkText)) {
         langRes = langData.langCode
         break
